@@ -30,5 +30,3 @@ typing_extensions==4.0.1
 uritemplate==4.1.1
 urllib3==1.26.8
 whitenoise==5.3.0
-tkintertable
-tk-tools
