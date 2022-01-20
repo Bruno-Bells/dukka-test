@@ -34,7 +34,7 @@ pip install -r requirements.txt
 
 ## Using Receipts Generator
 
-To Run the project localy, you will need to make some changes to the API urls in the template (this is if you want to use the HTML/JS User Interface): skip the next command and proceed running makemigrations. 
+To Run the project localy, you will need to make some changes to the API urls in the template (this is if you want to use the HTML/JS User Interface otherwise skip the next step and proceed running makemigrations.):  
 
 locate the template file:
 ```
