@@ -67,9 +67,9 @@ However, to save yourself the hassle of setting up locally; see the project live
 
 ## Contact
 
-If you want to contact me you can reach me at brunoodinukweeze1@gmail.com.
+If you want to contact me you can reach me at brunoodinukweze1@gmail.com.
 
 ## License
 
-This project uses the following license: [<MIT license>](<https://github.com/Bruno-Odinukweze/dukka-test/blob/main/LICENSE>).
+This project uses the following license: MIT license <https://github.com/Bruno-Odinukweze/dukka-test/blob/main/LICENSE>.
 
