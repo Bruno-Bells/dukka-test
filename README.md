@@ -63,7 +63,7 @@ open in the browser:
 http://localhost:8000
 ```
 
-On the home page locate the ``` Go to API version``` button to switch to API View
+On the home page locate the ``` Go to API view``` button to switch to API View
 
 However, to save yourself the hassle of setting up locally; see the project live: http://dukka-test.herokuapp.com/
 
