@@ -177,6 +177,6 @@ def gen_receipt_pdf(request, pk):
     full_zip_in_memory = generate_zip(files)
     
     # Return File
-    return HttpResponse(full_zip_in_memory, mimetype = "application/x-zip-co mpressed")
+    return HttpResponse(full_zip_in_memory, content_type = "application/x-zip-co mpressed")
     # return FileResponse(full_zip_in_memory, as_attachment=True, filename='receipt.zip')
 
