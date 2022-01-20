@@ -1,4 +1,4 @@
-# Receipts Generation/ power test 
+# Receipts Generator/ power test 
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/bruno-odinukweze/README-template.md)
 ![GitHub contributors](https://img.shields.io/github/contributors/bruno-odinukweze/README-template.md)
@@ -6,7 +6,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/bruno-odinukweze/README-template.md?style=social)
 <!-- ![Twitter Follow](https://img.shields.io/twitter/follow/scottydocs?style=social) -->
 
-Receipts Generation is a project that enable users to generate upto 10 receipts for a given transaction in a click. 
+Receipts Generator is a project that enable users to generate upto 10 receipts for a given transaction in a click. 
 
 ## Prerequisites
 
@@ -14,9 +14,9 @@ Before you begin, ensure you have met the following requirements:
 <!--- These are just example requirements. Add, duplicate or remove as required --->
 * You have python 3.6 + installed on your OS
 
-## Installing Receipt Generation
+## Installing Receipts Generator
 
-To install Receipt Generation, follow these steps:
+To install Receipts Generator, follow these steps:
 
 Clone the Project:
 ```
@@ -32,7 +32,7 @@ create and activate virtual environment and:
 pip install -r requirements.txt
 ```
 
-## Using Receipt Generation
+## Using Receipts Generator
 
 To Run the project localy, you will need to make some changes to the API urls in the template (this is if you want to use the HTML/JS User Interface):
 
