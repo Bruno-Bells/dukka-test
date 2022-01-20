@@ -228,7 +228,9 @@
         let url = "https://dukka-test.herokuapp.com/api/receipt-list/";
         // wrapper.innerHTML = '';
 
-        fetch(url)
+        fetch(url, {
+          method: "POST",
+          headers: {'X-CSRFToken': csrftoken, "Content-type": "application/json"}})
           .then((res) => res.json())
           .then((data) => {
             console.log(data);
@@ -267,7 +269,9 @@
                 console.log(list[i])
                 const download_url = `https://dukka-test.herokuapp.com/api/gen_receipt/${list[i].id}/`;
                 
-                fetch(download_url).then(res => {
+                fetch(download_url, {
+          method: "POST",
+          headers: {'X-CSRFToken': csrftoken, "Content-type": "application/json"}}).then(res => {
                   window.open(download_url, '_blank');
                 }).catch(err => console.err(new Error(err)))
               
