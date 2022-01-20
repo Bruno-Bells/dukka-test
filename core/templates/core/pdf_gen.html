@@ -202,7 +202,7 @@
             const services = document.getElementById('services').value;
             const totalAmount = document.getElementById('totalAmount').value;
 
-            let url = "http://localhost:8000/api/receipt-create/";
+            let url = "https://dukka-test.herokuapp.com/api/receipt-create/";
             console.log(fullname)
             if(fullname && address && phone && services && totalAmount){
                 fetch(url, {
@@ -225,7 +225,7 @@
       let list_snapshot = []
 
       function buildList() {
-        let url = "http://localhost:8000/api/receipt-list/";
+        let url = "https://dukka-test.herokuapp.com/api/receipt-list/";
         // wrapper.innerHTML = '';
 
         fetch(url)
@@ -265,7 +265,7 @@
               const downloadbtn = document.querySelectorAll('.download')[i];
               downloadbtn.addEventListener('click', function(){
                 console.log(list[i])
-                const download_url = `http://localhost:8000/api/gen_receipt/${list[i].id}/`;
+                const download_url = `https://dukka-test.herokuapp.com/api/gen_receipt/${list[i].id}/`;
                 
                 fetch(download_url).then(res => {
                   window.open(download_url, '_blank');
@@ -280,7 +280,7 @@
               deletebtn.addEventListener('click', function(){
                 // console.log(`Item ${i} was clicked`);
                 console.log(list[i]);
-                const del_url = `http://localhost:8000/api/receipt-delete/${list[i].id}/`;
+                const del_url = `https://dukka-test.herokuapp.com/api/receipt-delete/${list[i].id}/`;
                 const payload = { method: "DELETE", headers:{'Content-type': 'application/json', 'X-CSRFToken': csrftoken}}
                 fetch(del_url, payload).then(res => {
                   buildList();
@@ -302,11 +302,11 @@
       form.addEventListener("submit", function (e) {
         e.preventDefault();
         console.log("Form submit");
-        let url = "http://localhost:8000/api/task-create/";
+        let url = "https://dukka-test.herokuapp.com/api/task-create/";
         const title = document.getElementById("title").value;
 
         if (activeItem != null){
-          url = `http://localhost:8000/api/task-update/${activeItem.id}/`;
+          url = `https://dukka-test.herokuapp.com/api/task-update/${activeItem.id}/`;
           activeItem = null;
         }
 
