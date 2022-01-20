@@ -34,7 +34,7 @@ pip install -r requirements.txt
 
 ## Using Receipts Generator
 
-To Run the project localy, you will need to make some changes to the API urls in the template (this is if you want to use the HTML/JS User Interface):
+To Run the project localy, you will need to make some changes to the API urls in the template (this is if you want to use the HTML/JS User Interface): skip the next command and proceed running makemigrations. 
 
 locate the template file:
 ```
@@ -62,6 +62,8 @@ open in the browser:
 ```
 http://localhost:8000
 ```
+
+On the home page locate the ``` Go to API version``` button to switch to API View
 
 However, to save yourself the hassle of setting up locally; see the project live: http://dukka-test.herokuapp.com/
 
