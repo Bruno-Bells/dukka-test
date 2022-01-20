@@ -1,9 +1,9 @@
 # Receipts Generation/ power test 
 
-![GitHub repo size](https://img.shields.io/github/repo-size/scottydocs/README-template.md)
-![GitHub contributors](https://img.shields.io/github/contributors/scottydocs/README-template.md)
-![GitHub stars](https://img.shields.io/github/stars/scottydocs/README-template.md?style=social)
-![GitHub forks](https://img.shields.io/github/forks/scottydocs/README-template.md?style=social)
+![GitHub repo size](https://img.shields.io/github/repo-size/bruno-odinukweze/README-template.md)
+![GitHub contributors](https://img.shields.io/github/contributors/bruno-odinukweze/README-template.md)
+![GitHub stars](https://img.shields.io/github/stars/bruno-odinukweze/README-template.md?style=social)
+![GitHub forks](https://img.shields.io/github/forks/bruno-odinukweze/README-template.md?style=social)
 <!-- ![Twitter Follow](https://img.shields.io/twitter/follow/scottydocs?style=social) -->
 
 Receipts Generation is a project that enable users to generate upto 10 receipts for a given transaction in a click. 
@@ -12,7 +12,7 @@ Receipts Generation is a project that enable users to generate upto 10 receipts 
 
 Before you begin, ensure you have met the following requirements:
 <!--- These are just example requirements. Add, duplicate or remove as required --->
-* You have installed all the dependencies in the requirements.txt
+* You have python 3.6 + installed on your OS
 
 ## Installing Receipt Generation
 
