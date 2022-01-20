@@ -40,7 +40,7 @@ locate the template file:
 ```
 dukka-test > core > templates > core > pdf_gen.html
 ```
-change the url network location `dukka-test.herokuapp.com` to a `localhost:800` and save the chages
+change the url network location or domain from `dukka-test.herokuapp.com` to `localhost:800` and save the chages
 
 
 
@@ -56,6 +56,11 @@ python manage.py migrate
 run development server:
 ```
 python manage.py runserver
+```
+
+open in the browser:
+```
+http://localhost:8000
 ```
 
 However, to save yourself the hassle of setting up locally; see the project live: http://dukka-test.herokuapp.com/
