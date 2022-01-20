@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 from api.models import Receipt
-
+import zipfile
 from rest_framework.decorators import api_view, schema
 from rest_framework.response import Response
 from .serializers import ReceiptSerializer
@@ -111,11 +111,16 @@ def receiptDelete(request, pk):
     return Response("Item Successfully delete!")
 
 
-@api_view(["GET"])
-def gen_receipt_pdf(request, pk):
-    """
-    Download Receipt
-    """
+def generate_zip(files):
+    mem_zip = io.BytesIO()
+
+    with zipfile.ZipFile(mem_zip, mode="w", compression=zipfile.ZIP_DEFLATED) as zf:
+        for f in files:
+            zf.writestr(f[0], f[1])
+
+    return mem_zip.getvalue()
+
+def generate_pdf(pk):
     # Create Bytestream buffer
     buf = io.BytesIO()
     # Create a canvas
@@ -150,7 +155,27 @@ def gen_receipt_pdf(request, pk):
     c.showPage()
     c.save()
     buf.seek(0)
+    pdf = buf.getvalue()
+    buf.close()
+    return pdf
+
+
+
+@api_view(["GET"])
+def gen_receipt_pdf(request, pk):
+    """
+    Download Receipt
+    """
+    file_names = ["receipt1.pdf", "receipt2.pdf", "receipt3.pdf", "receipt4.pdf", "receipt5.pdf", "receipt6.pdf", "receipt7.pdf", "receipt8.pdf", "receipt9.pdf", "receipt10.pdf"]
+    files = []
+
+    for f in file_names:
+        pdf = generate_pdf(pk) # your file generation method goes here
+        files.append((f, pdf))
+
+    full_zip_in_memory = generate_zip(files)
+    
 
     # Return File
-    return FileResponse(buf, as_attachment=True, filename='receipt.pdf')
+    return FileResponse(full_zip_in_memory, as_attachment=True, filename='receipt.zip')
 
