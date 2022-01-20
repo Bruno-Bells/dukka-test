@@ -22,23 +22,29 @@ Clone the Project:
 ```
 git clone https://github.com/Bruno-Odinukweze/dukka-test.git
 ```
-
-create virtual environment and install dependencies
 ```
 cd dukka-test
 ```
+
+create and activate virtual environment and:
+
 ```
 pip install -r requirements.txt
 ```
 
 ## Using Receipt Generation
 
-To Run the project localy, you will need to make some changes to the API urls in the template:
+To Run the project localy, you will need to make some changes to the API urls in the template (this is if you want to use the HTML/JS User Interface):
 
 locate the template file:
 ```
 dukka-test > core > templates > core > pdf_gen.html
 ```
+change the url network location `dukka-test.herokuapp.com` to a `localhost:800` and save the chages
+
+
+
+
 Make migrations:
 ```
 python manage.py makemigrations
@@ -56,10 +62,9 @@ However, to save yourself the hassle of setting up locally; see the project live
 
 ## Contact
 
-If you want to contact me you can reach me at <your_email@address.com>.
+If you want to contact me you can reach me at brunoodinukweeze1@gmail.com.
 
 ## License
-<!--- If you're not sure which open license to use see https://choosealicense.com/--->
 
-This project uses the following license: [<license_name>](<link>).
+This project uses the following license: [<MIT license>](<https://github.com/Bruno-Odinukweze/dukka-test/blob/main/LICENSE>).
 
