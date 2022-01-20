@@ -1,5 +1,6 @@
+import django
 from django.shortcuts import render
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 from api.models import Receipt
 import zipfile
 from rest_framework.decorators import api_view, schema
@@ -175,7 +176,7 @@ def gen_receipt_pdf(request, pk):
 
     full_zip_in_memory = generate_zip(files)
     
-
     # Return File
-    return FileResponse(full_zip_in_memory, as_attachment=True, filename='receipt.zip')
+    return HttpResponse(full_zip_in_memory, mimetype = "application/x-zip-co mpressed")
+    # return FileResponse(full_zip_in_memory, as_attachment=True, filename='receipt.zip')
 
